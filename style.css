@@ -1,0 +1,204 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Barre de navigation & entête */
+
+header{
+    width: 100%;
+    background-color:  #C55394;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: #FFF;
+   font-style: italic;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+ 
+}
+
+.menu ul {
+  display: flex;
+  list-style:none;
+  text-transform: uppercase;
+  padding-right: 25px;
+  padding-top: 20px;
+  
+  
+ 
+}
+
+.menu a:hover{
+    background-color:  #EB43A3;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px; 
+}
+
+/* Le main  */
+
+main{
+    background: center url(img/background.png);
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+   } 
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C55394;
+    background: no-repeat center url(img/rainbow.png);;
+    height: 262px;
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: 'Courgette', cursive;
+}
+
+h2{
+    color: #C55394;
+    padding: 50px 0px 30px 30px;
+    font-family:'Courgette', cursive;
+    font-size: 22px;
+}
+
+/* Contenu principale  */
+
+.container{
+   background-color: #FFF;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: -90px;
+    box-shadow: 0px -1px 2px 3px rgba(0, 0, 0, 0.22);
+}
+
+/* Partie Card  */
+
+.card-body{
+    background: black;
+    opacity: 0.90;
+    
+}
+
+.card{
+    margin: 40px;
+}
+
+.card-title{
+    color: #FFF;
+}
+
+/* Partie nous contacter */
+
+.contact{
+    padding-bottom: 40px;
+}
+.found{
+    display: flex;
+    
+}
+.map{
+    padding:0px 30px 30px 0px;
+}
+.address{
+    margin-bottom: 10%;
+
+}
+.address ul {
+    list-style: none;
+}
+.found h3{
+    color: #C55394;
+    padding-bottom: 20px;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+
+.btn{
+    background-color: #C55394;
+    color: #FFF;
+}
+.btn:hover{
+    background-color: #C55394;
+}
+
+/* Pied de page  */
+
+footer{
+    background-color: #EB43A3;
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    color: #FFF;
+}
+
+@media screen and (min-width: 360px) and (max-width:790px) {
+   header{
+    display: block;
+    text-align: center;
+   }
+   .logo{
+    display: block;
+    text-align: center;
+   }
+   .menu ul {
+    margin-left: 15%;
+   }
+   .infos p{
+       font-size: 1rem;
+       padding-left: 20px;
+       
+   }
+
+   .card{
+    margin: 5px;
+    margin-bottom: 10px;
+}
+   .container{
+    width: 95%;
+   }
+
+   .found{
+    display: block;
+    text-align: center;
+    width: 100%;
+    }
+
+   iframe{
+    width: 100%;
+    padding-left: 30px;
+   }
+   input{
+    text-align: center;
+    
+   }
+   .form-control{
+    width: 95%;
+    margin-left: 15px;
+   }
+  
+}
+
+@media screen and (max-width:992px) {
+    .found{
+        display: block;
+        text-align: center;
+        width: 100%;
+        }
+}
